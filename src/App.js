@@ -23,14 +23,14 @@ function App() {
        <div className="content-wrapper">
        
             <Routes>
-                  <Route  path="/" element={ <Dashboard/>} />
-                  <Route exact path="/MenuA" element={ <BlankPage/>} />
-                  <Route exact path="/MenuB" element={ <BlankPage/>} />
-                  <Route exact path="/MenuC" element={ <BlankPage/>} />
-                  <Route exact path="/MenuD" element={ <BlankPage/>} />
-                  <Route exact path="/Sales-Order" element={ <BlankPage/>} />
-                  <Route exact path="/Purchase-Order" element={ <BlankPage/>} />
-                  <Route exact path="/about" element={ <BlankPage/>} />
+                  <Route exact path="/MenuA" element={ <BlankPage pageName="MenuA"/>} />
+                  <Route exact path="/MenuB" element={ <BlankPage pageName="MenuB"/>} />
+                  <Route exact path="/MenuC" element={ <BlankPage pageName="MenuC"/>} />
+                  <Route exact path="/MenuD" element={ <BlankPage pageName="MenuD"/>} />
+                  <Route exact path="/Sales-Order" element={ <BlankPage pageName="Sales Order"/>} />
+                  <Route exact path="/Purchase-Order" element={ <BlankPage pageName="Purchase Order"/>} />
+                  <Route exact path="/about" element={ <BlankPage pageName="About"/>} />
+                  <Route exact path="*" element={ <Dashboard/>} />
                 
             </Routes>
           

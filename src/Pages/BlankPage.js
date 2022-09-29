@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class BlankPage extends Component {
-  render() {
-    return (
-      <div>
-             <h1><b>Welcom To Blank Page !</b></h1>
-      </div>
-    )
-  }
+export default function BlankPage(props) {
+  return (
+    <div>
+        <h1><b>Welcom To Blank Page ! {props.pageName}</b></h1>
+    </div>
+  )
 }
